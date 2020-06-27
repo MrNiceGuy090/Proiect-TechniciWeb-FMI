@@ -1,0 +1,89 @@
+.calendar-wrap {
+  width: 30%;
+  padding: 0.75em;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 1.5em;
+  color:black;
+}
+.calendar {
+  width: 100%;
+  margin-bottom: 0.75em;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.calendarNav{
+  display: inline-block;
+  margin:0;
+}
+.day-title {
+  width: 4em;
+  height: 4em;
+  font-weight: bold;
+  font-size: 0.75em;
+  background:white;
+}
+.day {
+  position: relative;
+  height: 3em;
+}
+.day:hover{
+  background:lightgray;
+}
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.day.prev-mon .day-number,
+.day.next-mon .day-number {
+  color: rgba(0,0,0,0.3);
+}
+
+.calendar-wrap {
+  display: block;
+}
+
+#calendar-form{
+  display: inline-block;
+}
+#calendar input{
+  float:left;
+  width:100%;
+}
+#calendar-form>*{
+  display: inline-block;
+  width:100%;
+  margin-left:0;
+  margin-top:10px;
+}
+
+#calendar-form button{
+  width:30%;
+  height: auto;
+}#calendar-form{
+  display: none;
+}
+#form-day, #form-month{
+  display: none;
+}
+.radio{
+  width:10%!important;
+  display: inline-block!important;
+}
+
+.verde{
+  border:2px solid green;
+}
+.rosu{
+  border:2px solid red;
+}
+.galben{
+  border:2px solid yellow;
+}

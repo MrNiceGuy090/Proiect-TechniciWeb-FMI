@@ -1,0 +1,18 @@
+main h1{
+    text-align: center;
+}
+main section p{
+    margin-left: 10%;
+    width: 80%;
+    text-align: justify;
+}
+main section ul li{
+    height: auto;
+    padding: 30px;
+}
+@media screen and (max-width:1000px){
+    main section p{
+        font-size: 0.5rem;
+    }
+    
+}

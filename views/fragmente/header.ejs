@@ -1,0 +1,47 @@
+
+<header>
+<nav id="menu">
+<h2>OnSpotIfy</h2>
+
+
+<ul>
+  	<% if(!locals.username) { %>
+<li>
+  <form method="post" action="/login">
+      <button type="submit" value="Submit" id="logIn" > Log in </button>
+      <input placeholder="Password" type ="password" name="parola">  </input>
+       <input placeholder="Username" name= "username"> </input>
+  <form>
+    </form>
+</li>
+	<% } else { %>
+  <li>
+    <a id="username">Logat: <%= locals.username %> </a>
+  </li>
+<li>
+  <a href="/logout"> Logout</a>
+</li>
+	<% } %>
+
+
+<li> <a href = "register" >Register</a> </li>
+<li><a>Artisti</a>
+
+<ul class="dropdown-content">
+
+        <li><a href="https://ro.wikipedia.org/wiki/Michael_Jackson">Michael Jackson</a></li>
+        <li> <a href="https://ro.wikipedia.org/wiki/The_Beatles">The Beatles</a></li>
+        <li> <a href="https://ro.wikipedia.org/wiki/Louis_Armstrong">Louis Armstrong</a></li>
+    </ul>
+
+    </li>
+<li><a href="genuri_de_muzica">Genuri de muzica</a></li>
+<li><a href="creare">Creare</a></li>
+<li><a href="sugestii">Sugestii</a></li>
+<li><a href="/">Acasa</a></li>
+
+</ul>
+
+</nav>
+<script src="/js/currentNav.js"></script>
+</header>

@@ -1,0 +1,55 @@
+h1,h2{
+    text-align: center
+}
+ul li a:visited, ul li a:link{
+color: white;}
+
+main section ul li {
+    text-align: left;
+}
+main section ul li a{
+    display: block;
+    text-align: center;
+    margin-top:250px;
+}
+
+main section ul li img {
+    position: absolute;
+    width: 21.65%;
+  z-index: 3;
+  animation: slideshow 12s linear 0s infinite;
+}
+
+main section ul li img:nth-child(2) {
+    z-index: 2;
+  animation-delay: 4s;
+}
+
+main section ul li img:nth-child(3) {
+    z-index: 1;
+  animation-delay: 8s;
+}
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+
+@media screen and (max-width:1000px){
+    
+main section ul li img {
+    position: absolute;
+    width: 96.5%;
+}
+main section ul li{
+    }
+main section ul li a{
+    display: block;
+    text-align: center;
+    margin-top:35vh;
+    margin-bottom: 5vh;
+}  
+    
+}

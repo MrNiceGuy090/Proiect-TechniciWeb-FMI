@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+    <meta name = "author" content="Smeu Stefan">
+  <meta name="description" content="Online Streaming Web App">
+  <meta name="keywords" content="creare playlist streaming muzica online">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnSpotIfy - Creare playlist</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/ejs.min.js"></script>
+        <script src="js/playlist.js"></script>
+        <script src="js/ajax.js"></script>
+
+    </head>
+<body>
+
+
+<%- include("../fragmente/header") %>
+    <main>
+      <section>
+      <h2>Catalog de melodii</h2>
+</section>
+      <!--
+        <section id="mainSection">
+    <h2>Creeaza-ti un playlist</h2>
+    <button id="add" onclick="addTrack()">Adauga melodie</button>
+            <div class="flexBreak"></div>
+            <table id="playlist">
+            <caption>Playlist-ul tau</caption>
+                <tr>
+                <th>Artist</th>
+                <th>Nume melodie</th>
+                </tr>
+            </table>
+    </section>
+
+
+-->
+
+
+<div id="afisTemplate" >  </div>
+
+<div onclick="reset()"  class="buton">Reset</div>
+<div onclick="select()" class="buton">Select</div>
+
+<div onclick="sortAsc()" class="buton">Sorteaza dupa numarul de ascultari</div>
+<div id="medDurata" class="buton" onclick="medDurata()">
+Durata medie a melodiilor(secunde):
+</div>
+<div> Filtreaza dupa genul muzical
+<select onchange="getGenre(this)" class="query">
+  <option value="">Toate</option>
+  <option value="Pop">Pop</option>
+  <option value="Rock">Rock</option>
+  <option value="Jazz">Jazz</option>
+  <option value="Hip hop">Hip Hop</option>
+  <option value="House">House</option>
+</select>
+</div>
+<input type="text" class="query" placeholder="Filtreaza dupa nume artist" id="inputArtist" onchange="filterArtist(this)">
+<p id="found"></p>
+<div id ="credits">
+            <a href="#top">Du-ma sus</a>
+<p>Site creat de Smeu Stefan</p>
+
+</div>
+            </main>
+<%- include("../fragmente/footer") %>
+
+    </body>
+</html>

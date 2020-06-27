@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ro">
+    <head>
+    <meta charset="utf-8">
+    <meta name = "author" content="Smeu Stefan">
+  <meta name="description" content="Online Streaming Web App| Sugestii">
+  <meta name="keywords" content="feedback opinie streaming muzica online">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OnSpotIfy - Sugestii</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/sugestii.css">
+        <script src="js/ejs.min.js"></script>
+        <script src="js/ajax.js"></script>
+    </head>
+<body>
+
+
+<%- include("../fragmente/header") %>
+    <main>
+      <!--
+      <div>
+
+<button onclick ="ajaxReq()">Vizualizeaza intreaga libraria de melodii</button>
+
+  <br>
+  <table id ="ajaxTable">
+      <tr>
+  <th>Nume melodie</th>
+  <th>Artist</th>
+  <th>Durata(secunde)</th>
+  <th>Data lansarii</th>
+  <th>Gen muzical</th>
+      </tr>
+  </table>
+
+</div>
+-->
+<section>
+
+    <h2>Trimite-ne sugestii</h2>
+    <form action="/feedback" method="post" id="form">
+      <input name="title" type="text" placeholder="Titlu"></input><br>
+        <textarea name="description" type="textarea" placeholder="Scrieti un comentariu"></textarea><br>
+        <button type="submit" value="Submit">Submit</button>
+        </form>
+</section>
+
+    <h1>Comentarii</h1>
+    
+    <div id="comments">
+<% for(var i=0; i<locals.comments.length; i++) {%>
+  <% if(locals.comments[i].downvotes <3 ) { %>
+    <div class="comment">
+      <div>
+      <h3 class="commentTtle"><%= locals.comments[i].title %></h3>
+      <p class="commentAuthor"> Autor:
+          <% if(!locals.comments[i].user) { %>
+            Anonim
+          <% } else { %>
+          <%= locals.comments[i].user %>
+          <% } %>
+      </p>
+
+      </div>
+      <p class="commentText"><%= locals.comments[i].description %></p>
+      <button id="upvote<%=i%>" onclick="upvote(this)">+</button>
+      <p class="upvotes"><%= locals.comments[i].upvotes %></p>
+      <button id="downvote<%=i%>" onclick="downvote(this)">-</button>
+      <p class="downvotes"><%= locals.comments[i].downvotes %></p>
+      <button onclick="hideCom(this)" id="hide">Hide</button>
+    </div>
+    <% } %>
+<% } %>
+    </div>
+
+<div id ="credits">
+            <a href="#top">Du-ma sus</a>
+<p>Site creat de Smeu Stefan</p>
+
+</div>
+    </main>
+
+<%- include("../fragmente/footer") %>
+    </body>

@@ -1,0 +1,16 @@
+{"lastId":13,"melodii":
+  [{"id":1,"nume":"Rio", "artist":"Netsky", "durata":235, "original":true, "data_lansarii":"03/06/2016", "gen_muzical":"House", "ascultari":12 },
+  {"id":2,"nume":"Royals", "artist":"Lorde", "durata":201, "original":true, "data_lansarii":"18/06/2013", "gen_muzical":"Pop", "ascultari":811 },
+  {"id":3,"nume":"Stayin Alive", "artist":"Bee Gees", "durata":285, "original":true, "data_lansarii":"13/12/1977", "gen_muzical":"Rock", "ascultari":39 },
+  {"id":4,"nume":"Supestition", "artist":"Stevie Wonder", "durata":266, "original":true, "data_lansarii":"24/10/1972", "gen_muzical":"Jazz", "ascultari":138 },
+  {"id":5,"nume":"Imma Be", "artist":"Black Eyed Pees", "durata":256, "original":true, "data_lansarii":"15/12/2009", "gen_muzical":"Hip hop", "ascultari":75 },
+  {"id":6,"nume":"Candy", "artist":"Robbie Williams", "durata":201, "original":true, "data_lansarii":"11/07/2012", "gen_muzical":"Pop", "ascultari":89 },
+  {"id":7,"nume":"Dream On", "artist":"Aerosmith", "durata":265, "original":true, "data_lansarii":"10/01/1975", "gen_muzical":"Rock", "ascultari":21 },
+  {"id":8,"nume":"Immigrant Song", "artist":"Led Zeppelin", "durata":244, "original":true, "data_lansarii":"23/03/1968", "gen_muzical":"Rock", "ascultari":80 },
+  {"id":9,"nume":"So what", "artist":"Miles Davies", "durata":553, "original":true, "data_lansarii":"06/02/1959", "gen_muzical":"Jazz", "ascultari":6 },
+  {"id":10,"nume":"Hail Mary", "artist":"2Pac", "durata":309, "original":true, "data_lansarii":"12/08/1996", "gen_muzical":"Hip hop", "ascultari":211 },
+  {"id":11,"nume":"Lose yourself", "artist":"Eminem", "durata":313, "original":true, "data_lansarii":"28/10/2002", "gen_muzical":"Hip hop", "ascultari":892 },
+  {"id":12,"nume":"No way back", "artist":"Adonis", "durata":712, "original":false, "data_lansarii":"24/03/2007", "gen_muzical":"House", "ascultari":2 },
+  {"id":13,"nume":"Great Spirit", "artist":"Armin van Buuren", "durata":643, "original":false, "data_lansarii":"14/09/2016", "gen_muzical":"House", "ascultari":127 }
+  ]
+}

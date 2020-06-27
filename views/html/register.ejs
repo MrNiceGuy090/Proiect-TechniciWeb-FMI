@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+    <meta charset="utf-8">
+    <meta name = "author" content="Smeu Stefan">
+  <meta name="description" content="Online Streaming Web App">
+  <meta name="keywords" content="artisti populari top 10 melodii streaming muzica online">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnSpotIfy</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/register.css">
+
+    </head>
+<body>
+
+<%- include("../fragmente/header") %>
+
+    <main>
+      <h1>Register</h1>
+ <section class="form">
+      <form method="post" action ="/register">
+        <label >Username:</label>
+        <input type="text" name="username">
+        <div class="break"></div>
+        <label >Nume:</label>
+        <input type="text"name="nume">
+        <div class="break"></div>
+        <label >Email:</label>
+        <input type="text" name="email" >
+        <div class="break"></div>
+        <label >Parola:</label>
+        <input name="parola" type ="password">
+        <div class="break"></div>
+        <label >Tara:</label>
+
+        <input name="tara" type ="radio" value="Romania" class="rbut">
+        <label class="rbut" id="ro"> Romania </label>
+
+        <input name="tara" type = "radio" value="USA" class="rbut">
+        <label class="rbut"> USA</label>
+        <div class="break"></div>
+        <label >Telefon:</label>
+        <input name="telefon" type ="tel">
+        <div class="break"></div>
+
+        <input type="submit" value="Submit" id="sub">
+      </form>
+</section>
+
+    </main>
+
+<%- include("../fragmente/footer") %>
+    </body>
+
+</html>
